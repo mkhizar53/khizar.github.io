@@ -1,0 +1,50 @@
+
+
+body p, h2, h3, h4, h5, a{
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.top-margin {
+  margin-top: 150px !important;
+}
+.text {
+	font-family: 'Do Hyeon', sans-serif !important;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+a {
+	font-family: 'Do Hyeon', sans-serif !important;
+	font-size : 23px !important;
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: DarkCyan;
+	text-decoration: none;
+}
+
+a: visited {
+	color: LightCoral !important;
+}
+.collapsible {
+	color: black;
+	cursor: pointer;
+	font-size: 50px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 35%;
+	padding: none;
+	background-color: white;
+}
+.collapsible:hover{
+	color: DarkCyan;
+	text-decoration: none;
+}
+.content {
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	display: none;
+
+}
