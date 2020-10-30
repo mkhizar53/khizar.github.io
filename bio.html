@@ -91,7 +91,7 @@
     </div>
     <br><br>
 
-    
+
     <div class="container-fluid center bioFont">
         <h2 style="font-family: 'Grandstander', cursive;"> <b> me, other than school and career </b></h2>
             <div class="container">
@@ -111,10 +111,33 @@
 
 
                 <h3 style="font-family: 'Grandstander', cursive;"> i started to read, a lot. </h3>
-                <p style="font-family: 'Grandstander', cursive;"> i thought i was always a slow reader, which discouraged me from reading. but as i tried a different approach, it worked really well. what was the approach? it's more mental than anything. i read with purpose. purpose to learn and grow. it got better and fun. reading speed is absolutely irrelevant now. although i read a lot in my ap lit class in high school, but when i look back and think about when i truly started reading, i'd say it started with <a style="font-family: 'Grandstander', cursive !important; font-size: 15px !important; color: red;" href="http://paulgraham.com/articles.html" target="_blank"> paul graham's </a>essays and <a style="font-family: 'Grandstander', cursive !important; font-size: 15px !important; color: red;" href="http://www.allamaiqbal.com/contents.php?bookbup=21&fortype=2&forid=37&lang_code=en&lang=2" target="_blank"> Allama Iqbal's The Reconstruction of Religious Thought in Islam. </a> i feel like that's when i read for me. now i just be reading. i'm currently reading <u>psychology of money by morgan housel.</u> highly recommend. if you have any recommendations, pls do let me know!</p>
+                <p style="font-family: 'Grandstander', cursive;"> i thought i was always a slow reader, which discouraged me from reading. but as i tried a different approach, it worked really well. what was the approach? it's more mental than anything. i read with purpose. purpose to learn and grow. it got better and fun. reading speed is absolutely irrelevant now. although i read a lot in my ap lit class in high school, but when i look back and think about when i truly started reading, i'd say it started with <a style="font-family: 'Grandstander', cursive !important; font-size: 15px !important; color: red;" href="http://paulgraham.com/articles.html" target="_blank"> paul graham's </a>essays and <a style="font-family: 'Grandstander', cursive !important; font-size: 15px !important; color: red;" href="http://www.allamaiqbal.com/contents.php?bookbup=21&fortype=2&forid=37&lang_code=en&lang=2" target="_blank"> Allama Iqbal's The Reconstruction of Religious Thought in Islam. </a> i feel like that's when i read for me. now i just be reading. i'm currently reading <u>psychology of money by morgan housel.</u> highly recommend. if you have any recommendations, pls do let me know down below ⬇️</p> 
+                <form name="submit-to-google-sheet">
+                  <input type="text" id="bookrecs" name="bookrecs">
+                  <input type="submit" id="buttoni" value="Submit">
+                </form>
+                </p> 
             </div>
 
     </div>
+
+
+
+
+
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxc5ViasU-4GqwJPRLVdP685Ib3d64Lzv-ac6IiP0ZlDdJjbxvV/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+          .then(document.getElementById("buttoni").value= "thank you for your rec :)")
+      })
+    </script>
 
   </body>
 </html>
