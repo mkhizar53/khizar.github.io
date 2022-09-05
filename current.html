@@ -64,45 +64,44 @@
 
 
 
-    <div class="container-fluid center">
-        <button type="button" class="collapsible text"> <h2 class="text"> 👨🏽‍💻👨🏽‍🔬📊🖋💼 wearing many hats and shoes at heylo corp atm ⇲ </h2> </button>
-
-        <div class="content">
-            <ul>
-                <li>leading at a start-up to get rid of nicotine completely, and replacing it with natural inhalables. </li>
-                <li>developed front-end and back-end for the e-commerce site. integrated neurotags (anti-counterfeiting services) api with our backend to help customer check for the authenticity of their heylo vape.</li>
-                <li>providing my expertise, and making product decisions.</li>
-                <li>deciding what to build. and building what i decide.</li>
-                <li> check us out: <a href="https://heylovapor.com" target="_blank" style="font-family:'Indie Flower', cursive !important;"><u>{heylovapor.com} </u></a> </li>
-            </ul> 
-        </div>
+    <div class="container-fluid">
+        <button type="button" class="collapsible text"> <h2 class="text"> 🕵🏽‍♂️👨🏽‍💻🐛 coding at Mosaic Finance (SDET & QA Lead) ⇲ </h2> </button>
+        <div class="row content">
+            <div class="col-sm">
+                    <ul>
+                        <li>one of the first four SDETS hired. There are 4 teams, and i was assigned as an SDET to one. </li>
+                        <li>led all automation and manual testing efforts for my team. team analysis/canvas! </li>
+                        <li>using cypress.io and karate automation framework, i developed 200+ end-2-end front-end, back-end, and api automation test-suites for the analysis team!</li>
+                        <li>created and designed Test-Plans for every new feature within the canvas team. both automation and manual in order to ensure smooth release for each feature.</li>
+                        <li>deciding what to automate and how to automate.</li>
+                        <li>earned promotion to be the QA lead along with an SDET for the Canvas team.</li>
+                        <li>planned and organized sprints for all the new manual testers and SDETs hired for the Canvas team.</li>
+                        <li> company's website: <a href="https://www.mosaic.tech/" target="_blank" style="font-family:'Indie Flower', cursive !important;"><u>{mosaic.tech} </u></a> </li>
+                        <li>what i specifically worked on automating: <a href="https://www.mosaic.tech/products/mosaic-analytics" target="_blank" style="font-family:'Indie Flower', cursive !important;"><u>{mosaic analytics} </u></a> </li> 
+                    </ul> 
+             </div>
+        </div> 
     </div>
 
-
-
-
     <div class="container-fluid center">
-        <button type="button" class="collapsible text"> <h2 class="text"> 🔍looking for new opportunities as well. click to find my info</h2> </button>
-
-        <div class="content">
+        <button type="button" class="collapsible text"> <h2 class="text"> 🔍 get in touch :)</h2> </button>
+        <div class="row content">
             <ul>
-                <li style="color: purple !important;"> <b> khizar@heydaycorp.com </b> </li>
+                <li  style="font-family:'Indie Flower', cursive !important;"> <b> <u> mohammadkhizar61@gmail.com </u></b> </li>
                 <li><a href="https://www.linkedin.com/in/khizar-khan/" target="_blank" style="font-family:'Indie Flower', cursive !important;"><u>linkedin </u></a> </li>
                 <li><a href="http://github.com/mkhizar53" target="_blank" style="font-family:'Indie Flower', cursive !important;"><u>github </u></a> </li>
-                <li>let's chat :)</li>
             </ul> 
         </div>
     </div>
-
-
 
 
     <script>
         var contain = document.getElementsByClassName("collapsible");
         var i;
-
-        for (i = 0; i < contain.length; i++) {
+        for (i = 0; i < 100; i++) {
             contain[i].addEventListener('click', function() {
+                console.log(contain.length);
+                console.log(i);
                 var content = this.nextElementSibling;
                 if(content.style.display === "block"){
                     content.style.display = "none";
@@ -110,7 +109,7 @@
                     content.style.display = "block";
                 }
             });
-        }
+        }        
 
 
 
